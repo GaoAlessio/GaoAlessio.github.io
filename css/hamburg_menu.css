@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container_fixed{
+    width: 100%;
+    height: 60px;
+}
+.hamburg_menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 0;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+}
+.logo img{
+    transform: scaleY(0);
+}
+.hamburg_menu #toggle:checked ~ .logo img , .hamburg_menu #ricerca:checked ~ .logo img{
+    transform: scaleY(1);
+}
+.nascosta .argomenti{
+    list-style-type: none;
+    padding: 5px;
+}
+.nascosta .argomenti li{
+    margin: 5px 0;
+}
+.subscribe_now , .Sing_in , .log_in , .subscribe{
+    box-sizing: border-box;
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: rgb(125,22,30);
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.subscribe_now a , .Sing_in a , .log_in a , .subscribe a{
+    color: white;
+}
+.down{
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px black solid;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.hamburg_menu .nascosta{
+    height: 1000px;
+    position: absolute;
+    top: 50px;
+    width: 20%;
+    border-top: 1px black solid;
+    padding-top: 20px;
+    transform: scaleY(0);
+    background-color: white;
+}
+.hamburg_menu #toggle:checked  ~ .nascosta , .hamburg_menu  #ricerca:checked ~ .ricerca_nascosta{
+    transform: scaleY(1);
+}
+.hamburg_menu #toggle , .hamburg_menu #ricerca{
+    display: none;
+}
+.hamburg_menu label{
+    display: block;
+    width: 20%;
+    height: 48px;
+    cursor:  pointer;
+}
+.hamburg_menu label .hamburg_container{
+    position: relative;
+    top: 17px;
+    left:30px ;
+    height: 20px;
+}
+.hamburg_menu label .hamburg_container span:nth-child(1){
+    position: relative;
+    width: 8px;
+    top: 0;
+    display: block;
+    height: 1px;
+    background-color: black;
+}
+.hamburg_menu label .hamburg_container span:nth-child(2){
+    position: relative;
+    width: 8px;
+    top: 5px;
+    display: block;
+    height: 1px;
+    background-color: black;
+}
+.hamburg_menu label .hamburg_container span:nth-child(3){
+    position: relative;
+    width: 8px;
+    top: 10px;
+    display: block;
+    height: 1px;
+    background-color: black;
+}
+.hamburg_menu label .hamburg_container span:nth-child(4){
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+}
+.hamburg_menu #toggle:checked + label .hamburg_container span:nth-child(1){
+    top: 5px;
+    transform: rotate(45deg);
+
+}
+.hamburg_menu #toggle:checked + label .hamburg_container span:nth-child(2){
+    display: none;
+}
+.hamburg_menu  #toggle:checked + label .hamburg_container span:nth-child(3){
+    top: 5px;
+    transform: rotate(-45deg);
+
+}
+.hamburg_menu .fondo{
+    display: flex;
+}
+label .logo_ricerca{
+    width: 50px;
+    height: 50px;
+    background-image: url("../imagines/search.png");
+    background-repeat: no-repeat;
+
+}
+.ricerca_nascosta{
+    transform: scaleY(0);
+    position: absolute;
+    top: 50px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    margin: 0 63px 0 0px;
+    padding-top: 10px;
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+.ricerca_nascosta .barra_ricerca input{
+    width: 98%;
+    border: none;
+}
+.ricerca_nascosta a .bottone_search{
+    width: 53px;
+    height: 23px;
+    background-color: rgb(125,22,30);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.ricerca_nascosta .barra_ricerca{
+    flex: 1px;
+    height: 40px;
+}
+.hamburg_menu  #ricerca:checked ~ label .logo_ricerca{
+    background-image: url(../imagines/x.png);
+}
+.subscribe1 , .log_in1 , .sing{
+    box-sizing: border-box;
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: rgb(125,22,30);
+    padding-left: 20px;
+    padding-top: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+.subscribe1 a, .log_in1 a, .sing a {
+    color: white;
+}
+.client{
+    display: none;
+    width: 20%;
+    height: 1000px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding-left: 20px;
+    background-color: white;
+}
+.log_in1{
+    margin-bottom: 500px;
+}
+.beforesing{
+    padding-top: 50px;
+    border-top: 1px black  solid;
+}
+.logo_client{
+    cursor: pointer;
+}
+.logo_client{
+    display: none;
+}
+@media screen and ( max-width: 1040px) {
+    .subscribe , .log_in{
+        display: none;
+    }
+    .logo_client{
+        display: block;
+    }
+    .header2{
+        display: none !important;
+    }
+    nav {
+        display: none;
+    }
+    .logo img{
+        transform: scaleY(1);
+    }
+}

@@ -1,7 +1,625 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THe Denver Post-Colorado breaking news,sports, ...</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/hamburg_menu.css" type="text/css">
+    <link rel="stylesheet" href="css/hrad.css" type="text/css">
+    <link rel="stylesheet" href="css/sezione1.css" type="text/css">
+    <link rel="stylesheet" href="css/sezione2.css" type="text/css">
+    <link rel="stylesheet" href="css/sezione3.css" type="text/css">
+    <link rel="stylesheet" href="css/icona_ricerca.css" type="text/css">
+    <link rel="stylesheet" href="css/sezione3_5.css" type="text/css">
+    <link rel="stylesheet" href="css/sezione4.css" type="text/css">
+    <link rel="stylesheet" href="css/sezione5.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div class="container_fixed"><div class="hamburg_menu">
+    <input type="checkbox" id="toggle">
+    <label for="toggle">
+        <div class="hamburg_container">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>All sections</span>
+        </div>
+    </label>
+    <div class="logo">
+        <img src="imagines/logo.png" alt="">
+    </div>
+    <div class="fondo">
+        <div class="logo_client"><img src="imagines/on.png" alt=""></div>
+        <div class="subscribe"><a href="#">Subscribe now</a></div>
+        <div class="log_in"><a href="#">Log in</a></div>
+        <label for="ricerca">
+            <div class="logo_ricerca"></div>
+        </label>
+
+    </div>
+    <input type="checkbox" id="ricerca">
+    <div class="nascosta">
+        <div class="subscribe_now"><a href="#">Subscribe now</a></div>
+        <ul class="argomenti">
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">News     ></a></li>
+            <li><a href="#">Sports     ></a></li>
+            <li><a href="#">Business     ></a></li>
+            <li><a href="#">Things To Do     ></a></li>
+            <li><a href="#">Outdoors     ></a></li>
+            <li><a href="#">Opinion     ></a></li>
+            <li><a href="#">Classifields     ></a></li>
+            <li><a href="#">The Know     ></a></li>
+            <li><a href="#">Subscribe     ></a></li>
+            <li><a href="#">Log in     ></a></li>
+        </ul>
+
+        <div class="down">
+            Sign up for Newsletters and Alerts
+            <div class="Sing_in"><a href="#">Sing in</a></div>
+        </div>
+    </div>
+    <div class="ricerca_nascosta">
+        <div class="barra_ricerca">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="type your search" name="search">
+        </div>
+        <a href="#"><div class="bottone_search">Search</div></a>
+    </div>
+    <div class="client">
+        <div class="subscribe1">
+            <a href="#">Subscribe</a>
+        </div>
+        <div class="log_in1">
+            <a href="#">log in</a>
+        </div>
+        <div class="beforesing">Sign up for Newsletters and Alerts</div>
+        <div class="sing">
+            <a href="#">Sing up</a>
+        </div>
+    </div>
+    <script>
+        var logo=document.querySelector(".logo_client").firstElementChild;
+        var client=document.querySelector(".client");
+        var body=document.body;
+        var ricerca=document.querySelector(".logo_ricerca");
+        var log = document.querySelector(".logo").firstElementChild;
+        console.log(log.style.transform);
+        logo.onclick=function (){
+            if( client.style.display=='block' ){
+                logo.src='imagines/on.png' ;
+                client.style.display='none';
+                body.style.backgroundColor="white";
+
+            } else{
+                logo.src='imagines/off.png' ;
+                client.style.display='block';
+
+            }
+
+
+        }
+        ricerca.onclick=function (){
+            if(log.style.transform=="scaleY(1)"){
+                log.style.transform="scaleY(0)";
+            }else{
+                log.style.transform="scaleY(1)";
+            }
+
+        }
+
+    </script>
+</div></div>
+
+<div class="header2">
+    <div class="subhead2">
+        <a href="#" class="temperatura" ><img src="imagines/temperatura.png" alt=""></a>
+        <a href="#" class="date" ><img src="imagines/data.png" alt=""></a>
+    </div>
+    <div class="logo1">
+        <a href="#"><img src="imagines/logo.png" alt=""></a>
+    </div>
+    <div class="publicita">
+        <a href="#"  ><img src="imagines/300x54.png" alt="300x50"></a>
+    </div>
+</div>
+<nav>
+    <ul class="navbar">
+        <div class="riga1">
+            <il><a href="#"> News</a></il>
+            <il><a href="#"> Sports </a></il>
+            <il><a href="#"> Bussness </a></il>
+            <il><a href="#"> Things to Do </a></il>
+            <il><a href="#"> Outdoors</a></il>
+            <il><a href="#"> Opinions </a></il>
+            <il><a href="#"> Classfields</a></il>
+        </div>
+        <div class="riga2">
+            <span>TRENDING:</span>
+            <il><a href="#">The Big Payout: Investigating Colorado’s federal COVID money</a></il>
+            <il><a href="#">Colorado COVID stats </a></il>
+            <il><a href="#">Wildfire map</a></il>
+            <il><a href="#">Ski areas that are still open 🏂</a></il>
+
+        </div>
+    </ul>
+
+</nav>
+<div class="publicita">
+    <div>
+        <a href="#" ><img src="imagines/740x70.png" alt="970x250"></a>
+    </div>
+</div>
+<section class="sezione1">
+    <div class="paragrafo">
+        <div class="paragrafo1">
+            <div class="articolo1">
+                <div class="testa">
+                    <div class="titolo"><a href="#">
+                        Titole dell'articolo(.......................)
+                    </a></div>
+
+                    <div class="descrizione">
+                        una serie di descizione dell'articolo(.................)
+                    </div></div>
+                <div class="imagine1">
+                    <a href="#">
+                        <img src="imagines/500x300.png" alt="500x300">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="paragrafo2">
+            <div class="articoli2">
+                <div class="paragrafo2.1"><a href="#"><img src="imagines/260x150.png" alt="">DESCRIZIONE ARTICOLO</a></div>
+                <div class="paragrafo2.2"><a href="#"><img src="imagines/260x150.png" alt="">DESCRIZIONE ARTICOLO</a></div>
+                <div class="paragrafo2.3"><a href="#"><img src="imagines/260x150.png" alt="">DESCRIZIONE ARTICOLO</a></div>
+                <div class="paragrafo2.4"><a href="#"><img src="imagines/260x150.png" alt="">DESCRIZIONE ARTICOLO</a></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="minisriticoli">
+        <div class="art">TITOLO ARTICOLO 1</div>
+        <div class="art">TITOLO ARTICOLO 2</div>
+        <div class="art">TITOLO ARTICOLO 3</div>
+        <div class="art">TITOLO ARTICOLO 4</div>
+        <div class="art">TITOLO ARTICOLO 5</div>
+        <div class="art">TITOLO ARTICOLO 6</div>
+        <div class="art">TITOLO ARTICOLO 7</div>
+        <div class="subscrive">8</div>
+    </div>
+
+    <div class="publicit">
+        <a href="#"><img src="imagines/150x300.png" alt="300x600"></a>
+    </div>
+
+</section>
+<div class="publicita2">
+    <div>
+        <a href="#" ><img src="imagines/740x70.png" alt="970x250"></a>
+    </div>
+</div>
+<section class="sezione2">
+    <div class="most-popular">
+        <div class="titolo">
+            <span>RECOMMENDED FOR YOU</span></div>
+        <div class="scatolalista">
+            <ul class="lista">
+                <li><a href="#">ARTICOLO 1 </a></li>
+                <li><a href="#">ARTICOLO 2 </a></li>
+                <li><a href="#">ARTICOLO 3 </a></li>
+                <li><a href="#">ARTICOLO 4 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 5 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 6 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 7 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 8 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 9 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 10 </a></li>
+            </ul> </div>
+
+    </div>
+    <div class="publicit">
+        <a href="#"><img src="imagines/150x300.png" alt="150x300"></a>
+    </div>
+</section>
+<div class="publicita2">
+    <div>
+        <a href="#" ><img src="imagines/740x70.png" alt="970x250"></a>
+    </div>
+</div>
+<section class="sezione3">
+    <div class="subsezione">
+        <div class="tema"> SPORTS ></div>
+        <div class="imaggine">
+            <a href="#">
+                <div><img src="imagines/200x100.png" alt="imagines/200x100"></div>
+                <div class="descrizione"><span>titolo dell'articolo</span></div>
+            </a>
+        </div>
+        <span> Descrizione dell'articolo</span>
+        <a href="#"><div class="articolo"> articolo1</div></a>
+        <a href="#"><div class="articolo"> articolo2</div></a>
+        <a href="#"><div class="articolo"> articolo3</div></a>
+        <a href="#"><div class="articoloNO"> articolo4</div></a>
+    </div>
+    <div class="subsezione">
+        <div class="tema"> THE KNOW ></div>
+        <div class="imaggine">
+            <a href="#">
+                <div><img src="imagines/200x100.png" alt="200x100"></div>
+                <div class="descrizione"><span>titolo dell'articolo</span></div>
+            </a>
+        </div>
+        <span> Descrizione dell'articolo</span>
+        <a href="#"><div class="articolo"> articolo1</div></a>
+        <a href="#"><div class="articolo"> articolo2</div></a>
+        <a href="#"><div class="articolo"> articolo3</div></a>
+        <a href="#"><div class="articoloNO"> articolo4</div></a>
+    </div>
+    <div class="subsezione"><div class="tema"> BUSSNESS ></div>
+        <div class="imaggine">
+            <a href="#">
+                <div><img src="imagines/200x100.png" alt="200x100"></div>
+                <div class="descrizione"><span>titolo dell'articolo</span></div>
+            </a>
+        </div>
+        <span> Descrizione dell'articolo</span>
+        <a href="#"><div class="articolo"> articolo1</div></a>
+        <a href="#"><div class="articolo"> articolo2</div></a>
+        <a href="#"><div class="articolo"> articolo3</div></a>
+        <a href="#"><div class="articoloNO"> articolo4</div></a></div>
+
+</section>
+<div class="publicita2">
+    <div>
+        <a href="#" ><img src="imagines/740x70.png" alt="970x250"></a>
+    </div>
+</div>
+<section class="sezione3_5">
+    <div class="all">
+        <div class="titolo"><a href="#">PHOTOS ></a>
+        </div>
+        <div class="container">
+            <div class="parte_sinistra">
+                <div class="imaggine">
+                    <a href="#"> <img src="imagines/200x100.png" alt="imaggine"></a>
+                </div>
+                <div class="testo_immagine">
+                    <a href="#">TITOLO DELL'ARTICOLO</a>
+                    <br>
+                    <br>
+                    <div>Descrizione articolo</div></div>
+            </div>
+            <div class="subarticolo">
+                <div><a href="#"><img src="imagines/30x30.png" alt="">titolo articolo 30x30</a></div>
+                <div><a href="#"><img src="imagines/30x30.png" alt="">titolo articolo 30x30</a></div>
+                <div><a href="#"><img src="imagines/30x30.png" alt="">titolo articolo 30x30</a></div>
+                <div><a href="#"><img src="imagines/30x30.png" alt="">titolo articolo 30x30</a></div>
+                <div><a href="#"><img src="imagines/30x30.png" alt="">titolo articolo 30x30</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="publicit">
+        <a href="#"><img src="imagines/150x300.png" alt="300x600"></a>
+    </div>
+</section>
+<div class="media_nascosta">
+    <input onClick="this.style.visibility='hidden';" type="checkbox" class="show" id="mostra">
+    <label class="lab" onClick="this.style.visibility='hidden';" for="mostra" >
+        <div class="cubo"></div>
+        <div class="more_photo">SHOW MORE PHOTOS</div>
+    </label>
+    <div class="more_content">
+        <ul class="media_more">
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+            <li><a href="#"> <div>
+                <div>
+                    <img src="imagines/170x95.png" alt="170x95">
+                </div>
+                <div>
+                    Titolo dell'articolo
+                </div>
+            </div>
+            </a>
+            </li>
+
+        </ul>
+
+    </div>
+    <script>
+        $(document).ready(function (){
+            $(".show").click(function (){
+                $(".more_content").slideToggle(1000);
+            });
+        })
+    </script>
+</div>
+<section class="sezione4">
+    <div class="titolo"><a href="#">DON'T MISS ></a>
+    </div>
+    <div class="container">
+        <div class="imaggine">
+            <a href="#"> <img src="imagines/200x100.png" alt="imaggine"></a>
+        </div>
+        <div class="testi">
+            <div class="testo_immagine">
+                <a href="#">TITOLO DELL'ARTICOLO</a>
+                <br>
+                <br>
+                <div>Descrizione articolo</div></div>
+
+            <div class="subarticolo">
+                <div><a href="#">sub1</a></div>
+                <div><a href="#">sub2</a></div>
+                <div><a href="#">sub3</a></div>
+                <div><a href="#">sub4</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="sezione4">
+    <div class="titolo"><a href="#">POLICIS ></a>
+    </div>
+    <div class="container">
+        <div class="imaggine">
+            <a href="#"> <img src="imagines/200x100.png" alt="imaggine"></a>
+        </div>
+        <div class="testi">
+            <div class="testo_immagine">
+                <a href="#">TITOLO DELL'ARTICOLO</a>
+                <br>
+                <br>
+                <div>Descrizione articolo</div></div>
+
+            <div class="subarticolo">
+                <div><a href="#">sub1</a></div>
+                <div><a href="#">sub2</a></div>
+                <div><a href="#">sub3</a></div>
+                <div><a href="#">sub4</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="sezione4">
+    <div class="titolo"><a href="#">MARSHALL FIRE ></a>
+    </div>
+    <div class="container">
+        <div class="imaggine">
+            <a href="#"> <img src="imagines/200x100.png" alt="imaggine"></a>
+        </div>
+        <div class="testi">
+            <div class="testo_immagine">
+                <a href="#">TITOLO DELL'ARTICOLO</a>
+                <br>
+                <br>
+                <div>Descrizione articolo</div></div>
+
+            <div class="subarticolo">
+                <div><a href="#">sub1</a></div>
+                <div><a href="#">sub2</a></div>
+                <div><a href="#">sub3</a></div>
+                <div><a href="#">sub4</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="sezione4">
+    <div class="titolo"><a href="#">MARSHALL FIRE ></a>
+    </div>
+    <div class="container">
+        <div class="imaggine">
+            <a href="#"> <img src="imagines/200x100.png" alt="imaggine"></a>
+        </div>
+        <div class="testi">
+            <div class="testo_immagine">
+                <a href="#">TITOLO DELL'ARTICOLO</a>
+                <br>
+                <br>
+                <div>Descrizione articolo</div></div>
+
+            <div class="subarticolo">
+                <div><a href="#">sub1</a></div>
+                <div><a href="#">sub2</a></div>
+                <div><a href="#">sub3</a></div>
+                <div><a href="#">sub4</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="sezione5">
+    <div class="most-popular">
+        <div class="titolo">
+            <span>TRENDING NATIONALLY</span></div>
+        <div class="scatolalista">
+            <ul class="lista">
+                <li><a href="#">ARTICOLO 1 </a></li>
+                <li><a href="#">ARTICOLO 4 </a></li>
+                <li><a href="#">ARTICOLO 2 </a></li>
+
+                <li class="destra"><a href="#">ARTICOLO 5 </a></li>
+                <li class="destra"><a href="#">ARTICOLO 3 </a></li>
+
+            </ul> </div>
+
+    </div>
+</section>
+<footer class="coda">
+    <div class="head_foot">
+        <ul class="lista1">
+            <li><a href="#">Member Services</a></li>
+            <li><a href="#">News Alerts</a></li>
+        </ul>
+        <ul class="lista2">
+            <li><a href="#"><img src="imagines/30x30.png" alt=""></a></li>
+            <li><a href="#"><img src="imagines/30x30.png" alt=""></a></li>
+            <li><a href="#"><img src="imagines/30x30.png" alt=""></a></li>
+            <li><a href="#"><img src="imagines/30x30.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="body_footer">
+        <div class="riga1"><ul>
+            <li><a href="#">Subscribe</a></li>
+            <li><a href="#">Become a Member / Subscribe</a></li>
+            <li><a href="#">Place a Hold</a></li>
+            <li><a href="#">Digital Replica Edition</a></li>
+            <li><a href="#">Denver Post Store</a></li>
+        </ul></div>
+        <div class="riga2">
+            <ul>
+                <li><a href="#">Classifieds</a></li>
+                <li><a href="#">Autos</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </div>
+        <div class="riga3">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Submit a News Tip</a></li>
+                <li><a href="#">Member Services</a></li>
+                <li><a href="#">Advertise With Us</a></li>
+                <li><a href="#">MNG Network Advertising</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Place an Obituary</a></li>
+            </ul>
+        </div>
+        <div class="riga4"> <ul>
+            <li><a href="#">Today’s Front Page</a></li>
+            <li><a href="#">Back Issues</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+        </ul></div>
+    </div>
+    <div class="enf_fotter">
+        <ul>
+            <li><a href="#">Copyright © 2022 MediaNews Group</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Arbitration</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Ethics Policy</a></li>
+            <li><a href="#">Powered by WordPress.com VIP</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

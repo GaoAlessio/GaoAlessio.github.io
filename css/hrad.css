@@ -1,0 +1,77 @@
+.header2{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.subhead2{
+    width: 20%;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+}
+.header2 .logo1{
+    width: 30%;
+}
+.header2 .logo1 a img{
+    width: 100%;
+}
+.header2 .publicita{
+    width: 25%;
+}
+.header2 .publicita a img{
+    width: 100%;
+}
+.navbar .riga1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    width: 100%;
+    height:40px ;
+    border-bottom: 1px black solid;
+
+}
+.riga1 il a{
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+.navbar .riga2{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.riga2 span{
+    display: block;
+    width: 5%;
+    margin-right: 50px;
+    color: rgb(125,22,30);
+    font-size: 10px;
+    font-weight: bold;
+}
+.riga2 il a{
+    margin-top: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.publicita {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.publicita div{
+    width: 50%;
+    min-width: 740px;
+}
+.publicita div a img{
+    width: 100%;
+    margin: 0 auto;
+}

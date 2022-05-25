@@ -1,0 +1,135 @@
+.sezione3_5{
+    width: 50%;
+    min-width:950px;
+    margin: 0 auto;
+    display: flex;
+}
+.sezione3_5 .all{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.sezione3_5 .publicit{
+    width: 20%;
+}
+.sezione3_5 .all .titolo{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px red solid;
+    margin-bottom: 10px;
+}
+.sezione3_5 .all .titolo a{
+    color: black;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.container .parte_sinistra{
+    width: 70%;
+}
+.container .parte_sinistra .imaggine a img{
+    width: 100%;
+}
+.container .parte_sinistra .testo_immagine{
+    width: 100%;
+}
+.container .subarticolo{
+    width: 28%;
+    margin: 0 1%;
+}
+.container .subarticolo div{
+    width: 100%;
+    height: 60px;
+    background-color: #bacbe6;
+    margin: 10px;
+}
+.sezione3_5 .publicit{
+    width: 18%;
+    margin: 0 10px;
+}
+.media_nascosta{
+    width: 50%;
+    margin: 0 auto;}
+.more_content{
+    width:100% ;
+    display: none;
+}
+#mostra{
+    display: none;
+}
+.media_more{
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.media_more li{
+    width: 20%;
+    margin: 10px;
+}
+.media_more li a div img{
+    width: 100%;
+}
+#mostra:checked ~ .media_nascosta label {
+    transform: scaleY(0);
+}
+.cubo  {
+    position: relative;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    cursor: pointer;
+    transform: rotate(45deg);
+    align-self: center;
+
+}
+.media_nascosta label .more_photo{
+    align-self: center;
+
+}
+.media_nascosta label{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid red;
+    flex-direction: column;
+    cursor: pointer;
+}
+@media screen and ( max-width: 1040px) {
+    .sezione3_5 .publicit{
+        display: none;
+    }
+    .sezione3_5{
+        width: 100%;
+    }
+    .sezione3_5 .all .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sezione3_5 .all .container .parte_sinistra{
+        width: 100%;
+    }
+    .sezione3_5 .all .container .subarticolo{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sezione3_5 .all .container .subarticolo div{
+        width: 45%;
+    }
+    .media_nascosta{
+        width: 100%;
+    }
+    .media_nascosta .more_content .media_more li{
+        width: 30%;
+    }
+}
+@media screen and ( max-width: 800px){
+    .media_nascosta .more_content .media_more li{
+        width: 45%;
+    }
+}

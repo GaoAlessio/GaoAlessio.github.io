@@ -1,0 +1,70 @@
+li{
+    list-style-type: none;
+}
+.coda{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+.coda .head_foot{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 10px;
+    border-bottom: 3px black solid;
+}
+.coda .head_foot .lista1{
+    width: 30%;
+
+    display: flex;
+}
+.coda .head_foot .lista2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+.coda .head_foot .lista2 li{
+    margin: 5px;
+    border-radius: 5px;
+}
+.coda .body_footer{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px black solid;
+}
+.coda .body_footer .riga1 ul , .coda .body_footer .riga2 ul , .coda .body_footer .riga3 ul , .coda .body_footer .riga4 ul , .coda .enf_fotter ul{
+    width: 80%;
+    display: flex;
+    margin-left:10% ;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.coda .body_footer .riga1 ul li a , .coda .body_footer .riga2 ul li a , .coda .body_footer .riga3 ul li a , .coda .body_footer .riga4 ul li a , .coda .enf_fotter ul li a , .coda .head_foot .lista1 li a{
+    color: black;
+    margin: 0 8px;
+}
+.coda .body_footer .riga1 ul li:nth-child(1) ,.coda .body_footer .riga2 ul li:nth-child(1) ,.coda .body_footer .riga3 ul li:nth-child(1) ,.coda .body_footer .riga4 ul li:nth-child(1) ,
+.coda .head_foot .lista1 li
+{
+    font-weight: bolder;
+}
+.enf_fotter{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+@media screen and ( max-width: 700px) {
+    .coda .body_footer .riga1 ul li:nth-child(2) , .coda .body_footer .riga1 ul li:nth-child(3) , .coda .body_footer .riga1 ul li:nth-child(4) , .coda .body_footer .riga1 ul li:nth-child(5) ,
+    .coda .body_footer .riga2 ul li:nth-child(2) , .coda .body_footer .riga2 ul li:nth-child(3) , .coda .body_footer .riga2 ul li:nth-child(4) ,
+    .coda .body_footer .riga3 ul li:nth-child(2) , .coda .body_footer .riga3 ul li:nth-child(3) , .coda .body_footer .riga3 ul li:nth-child(4) , .coda .body_footer .riga3 ul li:nth-child(5) , .coda .body_footer .riga3 ul li:nth-child(6) ,
+    .coda .body_footer .riga4 ul li:nth-child(2) , .coda .body_footer .riga4 ul li:nth-child(3) , .coda .body_footer .riga4 ul li:nth-child(4) , .coda .body_footer .riga3 ul li:nth-child(7)
+    {
+        display: none;
+    }
+    .coda .enf_fotter ul{
+        flex-direction: column;
+    }
+}

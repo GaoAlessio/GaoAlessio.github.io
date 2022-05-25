@@ -1,0 +1,63 @@
+.sezione4{
+    width: 60%;
+    margin: 30px auto;
+}
+.sezione4 .titolo{
+    color:red;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px red solid;
+    margin-bottom: 10px;
+}
+.sezione4 .container{
+    width: 100%;
+    display: flex;
+}
+.sezione4 .container .imaggine{
+    width: 40%;
+}
+.sezione4 .container .imaggine a img{
+    width: 100%;
+}
+.sezione4 .container .testi{
+    flex: 1;
+    display: flex;
+}
+.sezione4 .container .testi .testo_immagine{
+    width: 48%;
+    margin: 0 2%;
+}
+.sezione4 .container .testi .subarticolo{
+    flex: 1;
+}
+.sezione4 .container .testi .subarticolo div{
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    border-bottom: 1px black solid;
+    background-color: #fd7e14;
+}
+.sezione4 .container .testi .subarticolo div:nth-child(4){
+    border-bottom: none;
+}
+@media screen and (max-width:  1040px) {
+    .sezione4 .container .testi{
+        flex-direction: column;
+        margin-left: 5px;
+    }
+    .sezione4 .container .testi .testo_immagine, .sezione4 .container .testi .subarticolo{
+        width: 100%;
+    }
+}
+@media screen and (max-width:  800px){
+    .sezione4 .container{
+        flex-direction: column;
+    }
+    .sezione4 .container .testi{
+        width: 100%;
+    }
+    .sezione4 .container .imaggine{
+        width: 100%;
+    }
+
+}
